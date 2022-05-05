@@ -21,7 +21,7 @@
     />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,800;9..144,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,800;9..144,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -41,8 +41,8 @@
             <li><a href="#">Services</a></li>
             <li><a href="#">Projects</a></li>
             <li>
-              <a href="#" class="uppercase">
-                <button>Contact</button>
+              <a href="#">
+                <button class="uppercase">Contact</button>
               </a>
             </li>
           </ul>
@@ -51,9 +51,12 @@
     </header>
     <main>
       <!-- secion-1 -->
-      <div id="section-1" class="screen-height column space-around center-text">
+      <div
+        id="section-1"
+        class="screen-height column space-evenly center-text hr-center"
+      >
         <h1 class="uppercase">We are creatives</h1>
-        <img src="orange" alt="" />
+        <img src="images/icon-arrow-down.svg" width="30" alt="" />
       </div>
       <!-- secion-2 -->
       <div id="section-2" class="row">
@@ -102,38 +105,48 @@
         </div>
       </div>
       <!-- client testimonial -->
-      <div class="center-text">
+      <div class="center-text testimonial">
         <h2 class="uppercase">Client testimonials</h2>
         <div class="row">
           <!-- testimonial 1 -->
-          <div>
-            <img class="user" src="" alt="" />
+          <div class="column space-between hr-center">
+            <img class="user" src="images/image-emily.jpg" alt="" />
             <p>
               We put our trust in Sunnyside and they delivered, making sure our
               needs were met and deadlines were always hit.
             </p>
-            <p>Emily R.</p>
-            <p>Marketing Director</p>
+
+            <div>
+              <p class="user--name">Emily R.</p>
+              <p class="user--title">Marketing Director</p>
+            </div>
           </div>
           <!-- testimonial 2 -->
-          <div>
-            <img class="user" src="" alt="" />
+          <div class="column space-between hr-center">
+            <img class="user" src="images/image-thomas.jpg" alt="" />
             <p>
               Sunnyside’s enthusiasm coupled with their keen interest in our
               brand’s success made it a satisfying and enjoyable experience.
             </p>
-            <p>Thomas S.</p>
-            <p>Chief Operating Officer</p>
+
+            <div>
+              <p class="user--name">Thomas S.</p>
+              <p class="user--title">Chief Operating Officer</p>
+            </div>
           </div>
           <!-- testimonial 3 -->
-          <div>
-            <img class="user" src="" alt="" />
+          <div class="column space-between hr-center">
+            <img class="user" src="images/image-jennie.jpg" alt="" />
+
             <p>
               Incredible end result! Our sales increased over 400% when we
               worked with Sunnyside. Highly recommended!
             </p>
-            <p>Jennie F.</p>
-            <p>Business Owner</p>
+
+            <div>
+              <p class="user--name">Jennie F.</p>
+              <p class="user--title">Business Owner</p>
+            </div>
           </div>
         </div>
       </div>
@@ -163,8 +176,8 @@
       </div>
 
       <!-- footer -->
-      <div class="column hr-center">
-        <h2>Sunnyside</h2>
+      <footer class="column hr-center">
+        <h2>sunnyside</h2>
         <nav>
           <ul class="row no-decoration no-bullets">
             <li><a href="#">About</a></li>
@@ -174,12 +187,12 @@
         </nav>
 
         <div>
-          <a href=""><i class="fab fa-facebook-square"></i></a>
-          <a href=""><i class="fab fa-instagram"></i></a>
-          <a href=""><i class="fab fa-twitter-square"></i></a>
-          <a href=""><i class="fab fa-pinterest-square"></i></a>
+          <img src="images/icon-facebook.svg" alt="" />
+          <img src="images/icon-instagram.svg" alt="" />
+          <img src="images/icon-twitter.svg" alt="" />
+          <img src="images/icon-pinterest.svg" alt="" />
         </div>
-      </div>
+      </footer>
     </main>
   </body>
 </html>

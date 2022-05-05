@@ -278,6 +278,9 @@ a {
   .mobile-view {
     display: block;
   }
+  h1 {
+    font-size: 30px;
+  }
   /* Header Navigation */
   #header-navigation {
     display: none;

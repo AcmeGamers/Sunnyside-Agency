@@ -62,7 +62,7 @@
         id="section-1"
         class="screen-height column space-evenly center-text hr-center"
       >
-        <h1 class="uppercase">We are creatives</h1>
+        <h1 class="uppercase" id="title">We are creatives</h1>
         <img src="images/icon-arrow-down.svg" width="30" alt="" />
       </div>
       <!-- secion-2 -->
@@ -207,6 +207,26 @@
       //   console.log(path.includes("nav#header-navigation"));
       //   console.log(path);
       // });
+    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script>
+      var app = document.getElementById("title");
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+        delay: 50,
+      });
+
+      typewriter
+        .typeString("We Are Creative")
+        .pauseFor(2500)
+        .deleteChars(8)
+        .typeString("Innovative")
+        .pauseFor(2500)
+        .deleteChars(10)
+        .typeString("Prouductive")
+        .pauseFor(2500)
+        .start();
     </script>
   </body>
 </html>

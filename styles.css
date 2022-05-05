@@ -169,7 +169,12 @@ nav ul li a {
   padding-right: 25px;
   font-weight: 400;
   color: var(--section-4-color-1);
+  transition: 0.5s ease all;
 }
+footer > nav > ul > li > a:hover {
+  color: var(--white);
+}
+
 footer h2 {
   font-family: var(--font-v1);
   font-weight: 800;
@@ -203,7 +208,10 @@ footer div img {
   height: 10px;
   position: inherit;
   width: 100px;
-  transform: translate(-2px, -7px);
+  transform: translate(-2px, -5px);
+  border-radius: 20px;
+  z-index: -1;
+  transition: 0.5s ease all;
 }
 
 .link-yellow:after {
@@ -211,6 +219,12 @@ footer div img {
 }
 .link-red:after {
   background: hsla(0, 100%, 50%, 0.3);
+}
+.link-yellow:hover:after {
+  background: hsla(49, 100%, 50%, 0.7);
+}
+.link-red:hover:after {
+  background: hsla(0, 100%, 50%, 0.7);
 }
 
 header > div {
@@ -221,16 +235,23 @@ nav .links a {
   font-weight: 100;
   color: var(--white);
 }
+
 nav .links li:last-child a {
   padding-right: 0;
 }
-nav .links a button {
+button {
   padding: 20px 35px;
   border: none;
   border-radius: 5pc;
   background: var(--white);
   padding: 20px 35px;
   font-family: var(--font-v2);
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+button:hover {
+  color: white;
+  background: #6ecefe;
 }
 
 /* components */

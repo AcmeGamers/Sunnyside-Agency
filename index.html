@@ -186,12 +186,27 @@
       </footer>
     </main>
     <script>
+      let header = document.getElementById("header-navigation").style;
       function navigationActivision() {
-        let header = document.getElementById("header-navigation").style;
         header.display === "block"
           ? (header.display = "none")
           : (header.display = "block");
       }
+      window.addEventListener("resize", () => {
+        window.innerWidth > 768
+          ? (header.display = "block")
+          : (header.display = "none");
+      });
+
+      // window.addEventListener("click", (event) => {
+      //   let path = event.path;
+      //   window.innerWidth > 768 &&
+      //     path &&
+      //     path.includes("nav#header-navigation") === false &&
+      //     (header.display = "none");
+      //   console.log(path.includes("nav#header-navigation"));
+      //   console.log(path);
+      // });
     </script>
   </body>
 </html>

@@ -35,7 +35,14 @@
         <div class="logo">
           <img src="./images/logo.svg" alt="logo" />
         </div>
-        <nav>
+        <a
+          href="javascript:void(0);"
+          class="icon mobile-view"
+          onclick="navigationActivision()"
+        >
+          <img src="images/icon-hamburger.svg" alt="" />
+        </a>
+        <nav id="header-navigation">
           <ul class="row no-decoration hr-center no-bullets links">
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -152,27 +159,11 @@
       </div>
 
       <!-- images -->
-      <div class="row">
-        <img
-          class="width-25"
-          src="images/desktop/image-gallery-cone.jpg"
-          alt=""
-        />
-        <img
-          class="width-25"
-          src="images/desktop/image-gallery-milkbottles.jpg"
-          alt=""
-        />
-        <img
-          class="width-25"
-          src="images/desktop/image-gallery-orange.jpg"
-          alt=""
-        />
-        <img
-          class="width-25"
-          src="images/desktop/image-gallery-sugarcubes.jpg"
-          alt=""
-        />
+      <div class="row gallery">
+        <img src="images/desktop/image-gallery-cone.jpg" alt="" />
+        <img src="images/desktop/image-gallery-milkbottles.jpg" alt="" />
+        <img src="images/desktop/image-gallery-orange.jpg" alt="" />
+        <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="" />
       </div>
 
       <!-- footer -->
@@ -194,5 +185,13 @@
         </div>
       </footer>
     </main>
+    <script>
+      function navigationActivision() {
+        let header = document.getElementById("header-navigation").style;
+        header.display === "block"
+          ? (header.display = "none")
+          : (header.display = "block");
+      }
+    </script>
   </body>
 </html>

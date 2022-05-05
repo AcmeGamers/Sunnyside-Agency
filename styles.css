@@ -1,0 +1,255 @@
+:root {
+  /* Primary */
+  --primary-1: #fad400;
+  --primary-2: #fe7867;
+
+  /* Sections Color */
+  --section-4-color-1: #25564b;
+  --section-4-color-2: #19536b;
+
+  /* footer font color */
+  --footer-font: #458c7e;
+
+  /*  Neutral Colors */
+  --h2-color: #23303e;
+  --h3-color: #5a636c;
+  --p-color: #818498;
+  --grayish-blue: #a7abae;
+  --white: #ffffff;
+
+  /* fonts */
+  --font-v1: "Barlow", sans-serif;
+  --font-weight-1: 600;
+
+  --font-v2: "Fraunces", serif;
+  --font-weight-2: 700;
+  --font-weight-3: 900;
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+}
+
+h1 {
+  color: var(--white);
+
+  font-family: var(--font-v2);
+  font-size: 3.5rem;
+  font-weight: var(--font-weight-1);
+
+  letter-spacing: 0.1em;
+  text-align: center;
+
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: var(--h2-color);
+  font-family: var(--font-v2);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-3);
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-family: var(--font-v2);
+  font-size: 2rem;
+  font-weight: var(--font-weight-3);
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-family: var(--font-v1);
+  font-weight: 500;
+}
+
+/* Section 1 */
+#section-1 {
+  background: url("images/desktop/image-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Section 2 & Section 3 */
+#section-2 div:nth-child(1),
+#section-3 div:nth-child(2) {
+  padding: 100px 115px;
+}
+
+#section-2 img,
+#section-3 img {
+  width: 50%;
+}
+
+#section-2 div p,
+#section-3 div p {
+  padding: 25px 0;
+}
+
+/* Section 4 */
+
+#section-4 div {
+  width: 50%;
+  height: 500px;
+  padding-bottom: 50px;
+}
+
+#section-4 div:nth-child(1) {
+  background: url("images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  color: var(--section-4-color-1);
+}
+
+#section-4 div:nth-child(2) {
+  background: url("images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+
+  color: var(--section-4-color-2);
+}
+
+#section-4 p {
+  margin-top: 30px;
+  width: 25rem;
+}
+
+/* Section 5 */
+
+/*  */
+
+.link {
+  letter-spacing: 1px;
+  color: black;
+  text-transform: uppercase;
+  font-family: var(--font-v2);
+  font-weight: 900;
+  font-size: 12px;
+}
+
+header > div {
+  padding: 10px 40px;
+}
+nav .links a {
+  padding-right: 35px;
+  font-weight: 100;
+}
+nav .links li:last-child a {
+  padding-right: 0;
+}
+nav .links a button {
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5pc;
+  font-weight: 700;
+  background: white;
+
+  font-family: var(--font-v2);
+}
+
+/* components */
+a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: var(--font-v1);
+}
+@media only screen and (max-width: 375px) {
+}
+
+/* Predefined CSS */
+.flex {
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.hr-center {
+  align-items: center;
+}
+.hr-right {
+  align-items: flex-end;
+}
+.vr-top {
+  align-items: flex-start;
+}
+.vr-center {
+  justify-content: center;
+}
+.full-width {
+  width: -webkit-fill-available;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
+}
+.space-evenly {
+  justify-content: space-evenly;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+.mg-lr-10px {
+  margin: 0 10px;
+}
+.mg-lr-15px {
+  margin: 0 15px;
+}
+.mg-r-10px {
+  margin-right: 10px;
+}
+
+.mg-r-15px {
+  margin-right: 15px;
+}
+.mg-l-15px-r-10px {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.hidden {
+  display: none;
+}
+.no-decoration {
+  text-decoration: none;
+}
+.no-bullets {
+  list-style: none;
+}
+.center-text {
+  text-align: center;
+}
+.screen-height {
+  height: 100vh;
+}
+.absolute {
+  position: absolute;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.vr-bottom {
+  justify-content: flex-end;
+}
+.hr-bottom {
+  align-items: flex-end;
+}
+.width-25 {
+  width: 25%;
+}
